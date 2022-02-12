@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    {% include head.html %}
+  
+    <body class="code-snippets-visible">
+      
+      <div class="container">
+        
+        {% include header.html %}
+        
+        {% include nav.html %}
+        
+        <div class="docs-section">
+          
+          <h2 class="docs-header">{{ page.title }}</h2>
+          
+            {{ content }}
+          
+            {% include footer.html %}
+          
+        </div>
+        
+      </div>
+      
+    </body>
+  
+</html>

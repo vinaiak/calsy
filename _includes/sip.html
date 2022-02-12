@@ -1,0 +1,43 @@
+<form>
+    <table class="main">
+        <tr>
+            <td>Monthly Investment</td>
+            <td>
+                <input id="principal" />
+                <tr>
+                    <td>Expected Rate</td>
+                    <td>
+                        <input id="rate" />
+                        <tr>
+                            <td>Interest Compounding</td>
+                            <td>
+                                <select id="ci">
+                                    <option value="12">Monthly</option>
+                                    <option value="4">Quarterly</option>
+                                    <option value="2">Half Yearly</option>
+                                    <option value="1" selected>Yearly</option>
+                                </select>
+                                <tr>
+                                    <td>Time Period (months)</td>
+                                    <td>
+                                        <input id="time" />
+                                        <tr>
+                                            <td><button type="reset">Reset</button></td>
+                                            <td>
+                                                <button class="button-primary" type="button" onclick="rdmaturity();">Calculate</button>
+                                                <tr>
+                                                    <td><b>Total Value</b></td>
+                                                    <td><input id="mv" /></td>
+                                                </tr>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+</form>

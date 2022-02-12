@@ -1,0 +1,64 @@
+<form name="intt">
+    <table class="main">
+        <col class="w50" />
+        <col class="w40" />
+        <tr>
+            <td>Principal Amount</td>
+            <td>
+                <input id="principal" />
+                <tr>
+                    <td>Interest Rate</td>
+                    <td>
+                        <input id="rate" />
+                        <tr>
+                            <td>Interest Type</td>
+                            <td>
+                                <select id="itype">
+                                    <option value="s">Simple</option>
+                                    <option value="c" selected>
+                                        Compound
+                                    </option>
+                                </select>
+                                <tr>
+                                    <td>Compounding Frequency</td>
+                                    <td>
+                                        <select id="crate">
+                                            <option value="12">Monthly</option>
+                                            <option value="4">
+                                                Quarterly
+                                            </option>
+                                            <option value="2">Half-yearly</option>
+                                            <option value="1" selected>Yearly</option>
+                                        </select>
+                                        <tr>
+                                            <td>Period (months)</td>
+                                            <td>
+                                                <input id="time" />
+                                                <tr>
+                                                    <td>
+                                                        <button type="reset">Reset</button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="button-primary" type="button" onclick="interest()">
+                                                            Calculate
+                                                        </button>
+                                                        <tr>
+                                                            <td><b>Interest Amount</b></td>
+                                                            <td>
+                                                                <input id="inttamt" />
+                                                            </td>
+                                                        </tr>
+                                                    </td>
+                                                </tr>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                            </td>
+                        </tr>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+</form>
